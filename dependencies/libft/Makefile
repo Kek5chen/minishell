@@ -71,7 +71,7 @@ OBJSB := $(addprefix $(OBJS_DIR)/, $(OBJSB))
 
 
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror -g
+# CFLAGS = -Wall -Wextra -Werror -g
 
 all: $(NAME)
 
