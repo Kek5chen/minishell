@@ -73,5 +73,10 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+install: $(NAME)
+	@echo "Installing minishell..."
+	@install -d $(PREFIX)/bin
+	@install -m 755 minishell $(PREFIX)/bin
+
+.PHONY: all clean fclean re install
 .NOTPARALLEL: all clean fclean re
