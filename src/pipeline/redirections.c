@@ -70,6 +70,7 @@ int	redirect_output(t_cmd *cmd)
 	int	open_flags;
 	int	fd;
 
+	open_flags = 0;
 	while (cmd->next_type == CT_REDIRECT_OUT || \
 			cmd->next_type == CT_REDIRECT_OUTAPP)
 	{
